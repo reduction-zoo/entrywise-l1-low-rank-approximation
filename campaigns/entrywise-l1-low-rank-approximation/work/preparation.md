@@ -1,0 +1,7 @@
+# Partial Prepare evidence
+
+Recorded 2026-09-26. The fixed source corpus contains 120 distinct polynomial systems: 20 hand cases and 100 seeded random cases, with 64 YES and 56 NO. They cover zero to three real variables and include linear and quadratic atoms. Random YES cases fix a rational point and add a consistent square equation; random NO cases add a contradictory bound. `generate_cases.py` fixes all cases and seeds before candidate construction.
+
+Run `uv sync --locked` and `uv run --locked python campaigns/entrywise-l1-low-rank-approximation/work/check.py --self-test`. The command runs `research/validate_preparation.py`, regenerates random cases, recomputes labels with Z3 nonlinear real arithmetic, checks rational witnesses with exact `Fraction` arithmetic and verifies all hand labels. It passed. Only `unsat` is NO; `unknown` raises. A positive equation `x²=2` is separately checked to raise `Algebraic witness encoding pending`, since this source witness needs an irrational algebraic value. Oracle: CPython 3.12.14 and locked `z3-solver` 4.16.0.0.
+
+Prepare remains blocked. The full existential-real source representation requires algebraic witnesses and arbitrary finite Boolean combinations, beyond the current conjunction corpus. The target strict-L1 rank oracle and direct factor validator are not implemented. No candidate gate, reduction, proof or solution is claimed; zero construction rounds were authorized.

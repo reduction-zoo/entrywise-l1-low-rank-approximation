@@ -1,0 +1,5 @@
+[project]
+name = "entrywise-l1-low-rank-approximation"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["z3-solver==4.16.0.0"]
