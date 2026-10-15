@@ -1,0 +1,7 @@
+{
+  "id": "Q015",
+  "source_definition": "The source asks whether a finite existential formula of polynomial equalities and inequalities over the reals is satisfiable, using binary integer coefficients. Recovery must respect the campaign\u2019s finite algebraic witness representation; an unsatisfiable instance returns NO-SOLUTION.",
+  "target_definition": "The target asks whether a binary rational matrix has a rank-bounded approximation with unweighted entrywise L1 error strictly less than a rational \u03b5. The strict inequality is part of the question; an accepted factor witness uses the specified finite rational encoding.",
+  "required_result": "Construct deterministic polynomial-time maps F and G: F sends every legal source instance to a legal target instance, and G(x,y) is a valid source output for every valid output y of F(x). Preserve the stated threshold, domain and promises. The requested complexity conclusion is \u2203R-hardness for the stated target problem.",
+  "equation": ""
+}
