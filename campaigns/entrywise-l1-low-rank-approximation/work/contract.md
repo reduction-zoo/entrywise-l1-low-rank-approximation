@@ -1,3 +1,5 @@
+> Definition update 2026-10-16: this document preserves the earlier partial executable preparation. The current mathematical decision challenge is specified in [the formal definition](../formal/README.md); the finite corpus and pending oracle work below do not restrict that definition.
+
 # Partial contract
 
 The current source corpus uses a conjunction of polynomial comparisons, encoded as `{"variables":n,"constraints":[{"terms":[[integer_coefficient,[nonnegative_exponents,...]],...],"relation":op},...]}`. Relations are `=`, `!=`, `<`, `<=`, `>` and `>=` against zero. Covered positive outputs are rational vectors `{"values":[[numerator,positive_denominator],...]}`. `NO-SOLUTION` is accepted only after conclusive Z3 `unsat`. This is a finite test subdomain of the fixed existential-real source problem. The full source witness contract must also encode real algebraic values; a positive irrational case raises an explicit blocker rather than being mislabelled NO.

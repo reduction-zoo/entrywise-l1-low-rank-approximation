@@ -1,3 +1,5 @@
+> Definition update 2026-10-16: the current literature-based decision problem is in [the campaign question](../campaigns/entrywise-l1-low-rank-approximation/question.md) and [the Lean challenge notes](../campaigns/entrywise-l1-low-rank-approximation/formal/README.md). The imported research setup below is retained for provenance; its earlier witness serialization and preparation requirements do not restrict the current decision definition.
+
 ---
 status: proof-route-hold
 openness: unverified

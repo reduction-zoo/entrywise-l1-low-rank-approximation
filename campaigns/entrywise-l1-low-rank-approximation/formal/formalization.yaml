@@ -1,0 +1,52 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "entrywise-l1-low-rank-approximation: open decision challenge",
+    "description": "Literature-based problem definitions and an unproved polynomial-time reduction goal.",
+    "authors": [],
+    "responsible_maintainers": [],
+    "license": null
+  },
+  "sources": [
+    {
+      "title": "The Existential Theory of the Reals as a Complexity Class: A Compendium",
+      "id": "https://arxiv.org/html/2407.18006",
+      "type": "paper",
+      "relationship": "Section 1.1 and A-Open8"
+    },
+    {
+      "title": "On the Complexity of Robust PCA and L1-Norm Low-Rank Matrix Approximation",
+      "id": "https://arxiv.org/pdf/1509.09236",
+      "type": "paper",
+      "relationship": "Equations (1.1) and (1.4)"
+    }
+  ],
+  "status": {
+    "scope": "Definitions and open statement only; no reduction proved.",
+    "sorry_count": 1,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice",
+      "sorryAx"
+    ]
+  },
+  "fidelity": {
+    "divergences": "The target is the strict, unweighted entrywise L1 decision problem. A real factorization of width k states rank at most k, including rank zero and empty dimensions. The source is the full existential real language with integer arithmetic expressions, equality, strict inequalities, conjunction, disjunction and negation. Real assignments and factors are existential mathematical objects, not encoded algorithm outputs. This explicitly replaces the earlier incomplete search-witness contract with the published decision problem."
+  },
+  "review": {
+    "status": "Local build, semantic examples and axiom audit passed; Linux comparator pending",
+    "reviewers": []
+  },
+  "alignment": {
+    "namespace": "EntrywiseL1",
+    "statements": [
+      {
+        "lean": "EntrywiseL1.solve",
+        "module": "Challenge",
+        "status": "open"
+      }
+    ]
+  }
+}

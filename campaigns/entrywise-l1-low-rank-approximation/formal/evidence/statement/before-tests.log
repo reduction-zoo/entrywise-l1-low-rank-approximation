@@ -1,0 +1,39 @@
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:2:5: error: unknown namespace `EntrywiseL1`
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:4:10: error: Function expected at
+  sourceYes
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ⟨1, .equal (.mul (.var 0) (.var 0)) (.constant 2)⟩
+
+Hint: The identifier `sourceYes` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:6:2: error: No goals to be solved
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:8:12: error: Function expected at
+  targetYes
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ⟨1, 1, [[1]], 0, 1⟩
+
+Hint: The identifier `targetYes` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:9:12: error: Invalid argument: Variable `targetYes` is not a proposition or let-declaration
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:9:23: error(lean.unknownIdentifier): Unknown identifier `totalError`
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:9:35: error(lean.unknownIdentifier): Unknown identifier `productEntry`
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:9:49: error(lean.unknownIdentifier): Unknown identifier `realEntry`
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:9:60: error(lean.unknownIdentifier): Unknown identifier `rationalEntry`
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:8:45: error: unsolved goals
+x✝ : Sort u_1
+targetYes : x✝
+⊢ ¬sorry ()
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:11:10: error: Function expected at
+  targetYes
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ⟨1, 1, [[1]], 0, 2⟩
+
+Hint: The identifier `targetYes` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+/Users/xiweipan/Codes/reduction-zoo/entrywise-l1-low-rank-approximation/campaigns/entrywise-l1-low-rank-approximation/formal/Tests.lean:13:2: error: No goals to be solved

@@ -1,7 +1,14 @@
 {
-  "question": "Q015",
-  "status": "blocked: no faithful statement",
-  "reason": "The board requires the campaign's finite algebraic source witness representation and a specified finite rational factor encoding. The campaign state and work/preparation.md explicitly say the full algebraic witness encoding is pending, and cover only a rational-witness conjunction corpus. I could not identify a fixed full encoding for arbitrary existential formulas. Substituting rational source assignments would incorrectly reject x\u00b2=2; choosing a new algebraic representation could change the bit-complexity/recovery contract. No such substitution was made.",
-  "build": "not applicable: no Lean project",
-  "comparator": "not run"
+  "status": "statement built; open reduction unproved",
+  "checked_on": "2026-10-16",
+  "build": "passed: Lean 4.35.0 and pinned Mathlib",
+  "semantic_checks": "passed: Tests.lean",
+  "definition_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "open_theorem_axiom": "sorryAx",
+  "comparator": "not run: Linux bubblewrap unavailable on macOS",
+  "solution_verified": false
 }

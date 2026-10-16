@@ -1,7 +1,7 @@
 {
   "id": "Q015",
-  "source_definition": "The source asks whether a finite existential formula of polynomial equalities and inequalities over the reals is satisfiable, using binary integer coefficients. Recovery must respect the campaign\u2019s finite algebraic witness representation; an unsatisfiable instance returns NO-SOLUTION.",
-  "target_definition": "The target asks whether a binary rational matrix has a rank-bounded approximation with unweighted entrywise L1 error strictly less than a rational \u03b5. The strict inequality is part of the question; an accepted factor witness uses the specified finite rational encoding.",
-  "required_result": "Construct deterministic polynomial-time maps F and G: F sends every legal source instance to a legal target instance, and G(x,y) is a valid source output for every valid output y of F(x). Preserve the stated threshold, domain and promises. The requested complexity conclusion is \u2203R-hardness for the stated target problem.",
+  "source_definition": "The input is a finite existential sentence over real variables, with binary integer constants, addition, multiplication, negation, polynomial comparisons and Boolean connectives. Output YES exactly when the sentence is true over the reals, and NO otherwise. Real assignments are existential mathematical objects, not algorithm outputs.",
+  "target_definition": "Given a binary rational matrix A of shape m by n, a nonnegative integer k and a positive rational threshold epsilon, output YES exactly when there is a real matrix B of rank at most k with sum over all entries of |A_ij - B_ij| strictly less than epsilon. Equivalently, B = UV for unrestricted real factors of shapes m by k and k by n. The error is unweighted and the threshold is strict; output NO otherwise.",
+  "required_result": "Construct a deterministic polynomial-time map F from existential-real sentence satisfiability to this strict, unweighted L1 low-rank decision problem, preserving YES and NO. Boolean-answer recovery G is the identity. The requested conclusion is ∃R-hardness, with no additional algebraic-witness reconstruction requirement.",
   "equation": ""
 }

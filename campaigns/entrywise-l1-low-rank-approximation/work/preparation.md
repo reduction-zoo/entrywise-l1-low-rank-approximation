@@ -1,3 +1,5 @@
+> Definition update 2026-10-16: this document preserves the earlier partial executable preparation. The current mathematical decision challenge is specified in [the formal definition](../formal/README.md); the finite corpus and pending oracle work below do not restrict that definition.
+
 # Partial Prepare evidence
 
 Recorded 2026-09-26. The fixed source corpus contains 120 distinct polynomial systems: 20 hand cases and 100 seeded random cases, with 64 YES and 56 NO. They cover zero to three real variables and include linear and quadratic atoms. Random YES cases fix a rational point and add a consistent square equation; random NO cases add a contradictory bound. `generate_cases.py` fixes all cases and seeds before candidate construction.
